@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:sqlserver://LAPTOP-VK8RQP3Q:1433;databaseName=test_62teknologi;encrypt=true;trustServerCertificate=true
+    username: user
+    password: admin
+
+  jpa:
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+server:
+  port: 8080
+  servlet:
+    context-path: /business
+    encoding:
+      force-response: true
+      charset: UTF-8
